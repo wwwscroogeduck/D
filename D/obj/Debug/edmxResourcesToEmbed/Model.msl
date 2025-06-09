@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Partner">
+      <EntityTypeMapping TypeName="Model.Partner">
+        <MappingFragment StoreEntitySet="Partner">
+          <ScalarProperty Name="id_partner" ColumnName="id_partner" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="second_name_director" ColumnName="second_name_director" />
+          <ScalarProperty Name="first_name_director" ColumnName="first_name_director" />
+          <ScalarProperty Name="middle_name_director" ColumnName="middle_name_director" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="inn" ColumnName="inn" />
+          <ScalarProperty Name="raiting" ColumnName="raiting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerProduct">
+      <EntityTypeMapping TypeName="Model.PartnerProduct">
+        <MappingFragment StoreEntitySet="PartnerProduct">
+          <ScalarProperty Name="id_partner_product" ColumnName="id_partner_product" />
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="id_partner" ColumnName="id_partner" />
+          <ScalarProperty Name="count_product" ColumnName="count_product" />
+          <ScalarProperty Name="date_sale" ColumnName="date_sale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="articul" ColumnName="articul" />
+          <ScalarProperty Name="min_cost" ColumnName="min_cost" />
+          <ScalarProperty Name="id_product_type" ColumnName="id_product_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="Model.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="id_product_type" ColumnName="id_product_type" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="coefficient" ColumnName="coefficient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
